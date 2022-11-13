@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table tableName="cars" javaType="com.example.db.entities.Cars">
+    <annotations/>
+    <columns>
+        <column columnName="id" columnType="int4" length="10" jdbcType="4" autoincrement="true" nullable="false">
+            <annotations/>
+        </column>
+        <column columnName="name" columnType="varchar" length="20" jdbcType="12" autoincrement="false" nullable="false">
+            <annotations/>
+        </column>
+    </columns>
+    <foreignKeys/>
+    <primaryKey primaryKeyName="cars_pk">
+        <column columnName="id"/>
+    </primaryKey>
+    <selectionProviders/>
+</table>

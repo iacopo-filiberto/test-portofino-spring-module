@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  database:
+    image: postgres:13-alpine
+    volumes:
+      - db_data:/data/postgres
+      - ./env/dev/docker/db/init:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: "test"
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "manydesigns"
+      PGDATA: /data/postgres
+
+volumes:
+  db_data:
