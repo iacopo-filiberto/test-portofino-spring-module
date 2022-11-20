@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<table tableName="cars" javaType="com.example.db.entities.Cars">
+<table tableName="cars" javaClass="com.example.db.entities.Cars">
     <annotations/>
     <columns>
         <column columnName="id" columnType="int4" length="10" jdbcType="4" autoincrement="true" nullable="false">
